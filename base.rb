@@ -1,3 +1,10 @@
+plugin 'haml', :git => "git://github.com/nex3/haml.git"
+plugin 'factory_girl', :git => "git://github.com/thoughtbot/factory_girl.git"
+
+if yes?("Do you want to have attachments")
+  plugin 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
+end
+
 if yes?("Do you want to use RSpec for testing?")
   plugin "rspec", :git => "git://github.com/dchelimsky/rspec.git"
   plugin "rspec-rails", :git => "git://github.com/dchelimsky/rspec-rails.git"
